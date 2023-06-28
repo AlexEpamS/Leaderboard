@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="UserSpotView" customModule="Leaderboard" customModuleProvider="target">
+            <connections>
+                <outlet property="contentView" destination="iN0-l3-epB" id="JtW-aP-eNz"/>
+                <outlet property="crownImageView" destination="YFb-bF-x7P" id="eEj-On-tzJ"/>
+                <outlet property="iconImageView" destination="ejO-S8-wv0" id="DXE-tf-enT"/>
+                <outlet property="iconWidthConstraint" destination="vd9-9W-wRO" id="Exe-ft-mtL"/>
+                <outlet property="nameLabel" destination="IjS-wf-ETC" id="vae-wW-Pva"/>
+                <outlet property="scoreLabel" destination="0NF-Cc-IWa" id="osb-lx-oRC"/>
+                <outlet property="usernameLabel" destination="if6-R4-UyV" id="bv7-e3-Mk0"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" placeholderIntrinsicWidth="387" placeholderIntrinsicHeight="463" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="403" height="572"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="crown" translatesAutoresizingMaskIntoConstraints="NO" id="YFb-bF-x7P">
+                    <rect key="frame" x="184.66666666666666" y="5" width="34" height="27"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="27" id="pvK-eE-VPV"/>
+                        <constraint firstAttribute="width" constant="34" id="q6t-ER-hAB"/>
+                    </constraints>
+                </imageView>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ejO-S8-wv0">
+                    <rect key="frame" x="167.66666666666666" y="35" width="68" height="68"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="ejO-S8-wv0" secondAttribute="height" multiplier="1:1" id="MZF-YP-5cD"/>
+                        <constraint firstAttribute="width" constant="68" id="vd9-9W-wRO"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="IjS-wf-ETC" userLabel="Name label">
+                    <rect key="frame" x="5" y="473" width="393" height="24"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Score" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0NF-Cc-IWa" userLabel="Score label">
+                    <rect key="frame" x="172.33333333333334" y="505" width="58.666666666666657" height="24"/>
+                    <fontDescription key="fontDescription" type="system" weight="black" pointSize="20"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Username" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="if6-R4-UyV" userLabel="Username label">
+                    <rect key="frame" x="5" y="549" width="393" height="18"/>
+                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="15"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="IjS-wf-ETC" secondAttribute="trailing" constant="5" id="0sc-qA-HPh"/>
+                <constraint firstItem="0NF-Cc-IWa" firstAttribute="top" secondItem="IjS-wf-ETC" secondAttribute="bottom" constant="8" id="2Xb-oT-ztK"/>
+                <constraint firstItem="YFb-bF-x7P" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="5" id="3RV-Pa-Ugo"/>
+                <constraint firstItem="IjS-wf-ETC" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="5" id="6fH-wW-BAg"/>
+                <constraint firstItem="YFb-bF-x7P" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="DJX-Yy-nTM"/>
+                <constraint firstItem="if6-R4-UyV" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="HaQ-o7-vvr"/>
+                <constraint firstItem="if6-R4-UyV" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="5" id="NVb-rx-LuY"/>
+                <constraint firstItem="IjS-wf-ETC" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="Oag-p8-qr0"/>
+                <constraint firstItem="ejO-S8-wv0" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="OxP-5A-lY6"/>
+                <constraint firstItem="0NF-Cc-IWa" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="Stg-qg-F3a"/>
+                <constraint firstItem="ejO-S8-wv0" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" priority="750" constant="5" id="Xr9-4T-yAS"/>
+                <constraint firstItem="ejO-S8-wv0" firstAttribute="top" secondItem="YFb-bF-x7P" secondAttribute="bottom" constant="3" id="Xwd-Qi-u4j"/>
+                <constraint firstItem="IjS-wf-ETC" firstAttribute="top" relation="greaterThanOrEqual" secondItem="ejO-S8-wv0" secondAttribute="bottom" constant="15" id="iji-kk-f23"/>
+                <constraint firstAttribute="trailing" secondItem="if6-R4-UyV" secondAttribute="trailing" constant="5" id="khV-zb-BVA"/>
+                <constraint firstAttribute="bottom" secondItem="if6-R4-UyV" secondAttribute="bottom" constant="5" id="tbv-cG-oOd"/>
+                <constraint firstItem="if6-R4-UyV" firstAttribute="top" secondItem="0NF-Cc-IWa" secondAttribute="bottom" constant="20" id="zlU-vv-ivr"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="235.87786259541983" y="-340.14084507042253"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="crown" width="34" height="27"/>
+    </resources>
+</document>
